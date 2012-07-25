@@ -34,3 +34,11 @@
 	-o-box-shadow: @shadow;
 	box-shadow: @shadow;
 }
+.gradient (@origin: left, @start: #fff, @stop: #000, @default: #fff) {
+	background-color: @default;
+	background-image: -webkit-linear-gradient(@origin, @start, @stop);
+	background-image: -moz-linear-gradient(@origin, @start, @stop);
+	background-image: -o-linear-gradient(@origin, @start, @stop);
+	background-image: -ms-linear-gradient(@origin, @start, @stop);
+	background-image: linear-gradient(@origin, @start, @stop);
+}
