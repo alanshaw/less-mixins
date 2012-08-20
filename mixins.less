@@ -4,8 +4,7 @@
 	-o-border-radius: @radius;
 	border-radius:@radius;
 }
-.clearfix() {
-	zoom: 1;
+.clearfix() {	
 	&:before, &:after {
 		content: "";
 		display: table;
@@ -13,6 +12,7 @@
 	&:after {
 		clear: both;
 	}
+	*zoom: 1;
 }
 .transition(@transition) {
 	-moz-transition: @transition;
